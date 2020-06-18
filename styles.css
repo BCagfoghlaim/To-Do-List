@@ -1,0 +1,43 @@
+body{
+    background-color: aquamarine;
+    font-family: helvetica,arial,sans-serif;
+    
+}
+
+.subheading{
+    font-style: italic;
+
+}
+
+.main-container{
+    background-color: white;
+    padding: 10px 40px 40px;
+    border-radius: 50px;
+}
+
+input{
+    margin: 7px;
+}
+
+
+input[type=button]{
+    background-color: rgb(29, 155, 177);
+    color: rgb(240, 245, 245);
+    border-radius: 50px;
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+#empty-list{
+    background-color: darkred;
+}
+
+#save-list{
+    background-color: mediumseagreen;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: rgb(83, 83, 83);
+}
