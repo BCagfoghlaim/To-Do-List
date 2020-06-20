@@ -2,9 +2,12 @@ var addButton = document.getElementById("add-button");
 var toDoEntryBox = document.getElementById("todo-entry-box");
 var toDoList = document.getElementById("todo-list");
 var clearButton = document.getElementById("clear-button");
+var emptyButton = document.getElementById("empty-list");
+var saveButton = document.getElementById("save-list");
 
 addButton.addEventListener("click", addToDoItem);
 clearButton.addEventListener("click", clearCompletedItems);
+emptyButton.addEventListener("click", emptyList);
 
 function addToDoItem() {
     var itemText = toDoEntryBox.value;
@@ -38,6 +41,11 @@ function clearCompletedItems() {
    }
 }
     
-
+function emptyList() {
+    var toDoItems = toDoList.children;
+    while (toDoItems.length >0){
+        toDoItems.item(0).remove();
+    }
+}
 
 
