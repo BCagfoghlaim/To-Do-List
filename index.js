@@ -1,6 +1,7 @@
 var addButton = document.getElementById("add-button");
 var toDoEntryBox = document.getElementById("todo-entry-box");
 var toDoList = document.getElementById("todo-list");
+var clearButton = document.getElementById("clear-button");
 
 addButton.addEventListener("click", addToDoItem);
 
@@ -28,7 +29,13 @@ function newToDoItem(itemText, completed) {
          }
  }
 
+function clearCompletedItems() {
+    var completedItems = toDoList.getElementsByClassName("completed");
 
+    while (completedItems.length > 0){
+        completedItems.item(0).remove();
+   }
+}
     
 
 
