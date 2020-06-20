@@ -4,6 +4,7 @@ var toDoList = document.getElementById("todo-list");
 var clearButton = document.getElementById("clear-button");
 
 addButton.addEventListener("click", addToDoItem);
+clearButton.addEventListener("click", clearCompletedItems);
 
 function addToDoItem() {
     var itemText = toDoEntryBox.value;
