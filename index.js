@@ -8,6 +8,7 @@ var saveButton = document.getElementById("save-list");
 addButton.addEventListener("click", addToDoItem);
 clearButton.addEventListener("click", clearCompletedItems);
 emptyButton.addEventListener("click", emptyList);
+saveButton.addEventListener("click", saveList);
 
 function addToDoItem() {
     var itemText = toDoEntryBox.value;
@@ -48,4 +49,6 @@ function emptyList() {
     }
 }
 
-
+function saveList() {
+    alert("Haven't written the Save function yet");
+}
