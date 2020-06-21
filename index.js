@@ -21,7 +21,6 @@ function newToDoItem(itemText, completed) {
     var toDoText = document.createTextNode(itemText);
     toDoItem.appendChild(toDoText);
 
-
     toDoList.appendChild(toDoItem);
     toDoItem.addEventListener("dblclick", toggleToDoItemState);
     
