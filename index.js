@@ -55,20 +55,20 @@ function emptyList() {
     }
 }
 
-function saveList() {
-    alert("Haven't written the Save function yet");
-}
-
 // function saveList() {
-//   var myArray = [];
-  
-//   for (i=0; i < toDoList.children.length; i++){ 
-//     var toDoItem = toDoList.children.item(i);
-//     var toDoInfo = {
-//       "task": toDoItem.textContent,
-//       "completed": toDoItem.classList.contains("completed")
-//     };
-//     myArray.push(toDoInfo);
-//     localStorage.setItem("myArray", JSON.stringify(myArray));
-//   }
+//     alert("Haven't written the Save function yet");
 // }
+
+function saveList() {
+  var myArray = [];
+  
+  for (i=0; i < toDoList.children.length; i++){ 
+    var toDoItem = toDoList.children.item(i);
+    var toDoInfo = {
+      "task": toDoItem.textContent,
+      "completed": toDoItem.classList.contains("completed")
+    };
+    myArray.push(toDoInfo);
+    localStorage.setItem("myArray", JSON.stringify(myArray));
+  }
+}
