@@ -55,10 +55,6 @@ function emptyList() {
     }
 }
 
-// function saveList() {
-//     alert("Haven't written the Save function yet");
-// }
-
 function saveList() {
   var myArray = [];
   
@@ -71,6 +67,7 @@ function saveList() {
     myArray.push(toDoInfo);
     localStorage.setItem("myArray", JSON.stringify(myArray));
   }
+  alert("Saved");
 }
 
 function loadList(){
