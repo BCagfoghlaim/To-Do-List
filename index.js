@@ -72,3 +72,16 @@ function saveList() {
     localStorage.setItem("myArray", JSON.stringify(myArray));
   }
 }
+
+function loadList(){
+  if(localStorage.getItem("savedList") != null){
+    var savedList = JSON.parse(localStorage.getItem("savedList"));
+
+    for(i = 0; i < savedList.length; i++) {
+      var savedItem = savedList[i];
+      newToDoItem(savedItem.task,savedItem.completed);
+    }
+  }
+}
+
+loadList();
