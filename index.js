@@ -56,7 +56,7 @@ function emptyList() {
 }
 
 function saveList() {
-  var myArray = [];
+  var savedList = [];
   
   for (i=0; i < toDoList.children.length; i++){ 
     var toDoItem = toDoList.children.item(i);
@@ -64,8 +64,8 @@ function saveList() {
       "task": toDoItem.textContent,
       "completed": toDoItem.classList.contains("completed")
     };
-    myArray.push(toDoInfo);
-    localStorage.setItem("myArray", JSON.stringify(myArray));
+    savedList.push(toDoInfo);
+    localStorage.setItem("savedList", JSON.stringify(savedList));
   }
   alert("Saved");
 }
