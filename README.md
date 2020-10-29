@@ -11,4 +11,5 @@ Click 'Empty List' to clear the entire list.
 
 Click 'Save List' to save your changes.
 
-Note: Save only saves the list to your local storage.  If you open the link using a different device your list will not be saved.
+Note: Save only saves the list to your local storage.  
+If you open the link using a different device your list will not be saved.
